@@ -6,13 +6,15 @@
 
 Term: Fall 2016
 
-##### Project Goal
+### Project Goal
 + For each song, we provide recommendations for the lyrics in a way that how likely the lyrics would be in the song. 
 
-##### Approach & Methodology
+### Approach & Methodology
 + The basic approach that I had for this project was finding similarities of the features and since features are the primary factors that determine the characteristics of each song, selecting the features that are relevant was important. I plotted the features to check how they are characterized and to determine which features to use. I mostly extracted their mean, standard deviation, max, and min. 
 
 + Then, I used the method of recommendation of similarities implying that those features that have high similarities are more likely to share the lyrics. The professor shared the article about recommendations based on similarities and it gave an idea that I could cluster a few similar features and based on these similarities, I could identify their songs and rank the lyrics. Using the training and test dataset from the original 2350 songs, I could check how it relatively performed well by changing the number of songs for grouping. I chose to find 20 highest similarities and ranked the average of their lyrics for each 100 song.
+
+
 
 
 
