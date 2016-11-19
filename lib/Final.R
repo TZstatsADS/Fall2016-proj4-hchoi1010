@@ -149,7 +149,7 @@ write.csv(final_rank, file="Submission.csv")
 rank_feature.20<- matrix(data=NA, nrow= ncol(cut), ncol= ncol(df))
 system.time(for (i in 1:dim(cut)[2]){
   lab_row<-which(cut[,i]%in%sort(cut[,i],decreasing=T)[1:20])
-  rank_feature.20[i,]<-rank(-colMeans(df[lab_row,])) # ties are averaged
+  rank_feature.20[i,]<-rank(-colMeans(df[lab_row,])) 
 })
 final_rank.20<- cbind(file_order, rank_feature.20)
 write.csv(final_rank.20, file="Submission_hc2850.csv")
